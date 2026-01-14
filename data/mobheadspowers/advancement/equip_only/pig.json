@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "stepping_on": {
+            "block": {
+              "blocks": [
+                "minecraft:mud",
+                "minecraft:mud_brick_stairs",
+                "minecraft:mud_brick_slab",
+                "minecraft:mud_brick_wall",
+                "minecraft:mud_bricks",
+                "minecraft:muddy_mangrove_roots",
+                "minecraft:packed_mud"
+              ]
+            }
+          },
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.pig.ambient"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/equip_only/pig"
+  }
+}

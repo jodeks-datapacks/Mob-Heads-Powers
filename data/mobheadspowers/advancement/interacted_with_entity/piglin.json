@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": "minecraft:piglin_head"
+            }
+          }
+        },
+        "item": {
+          "items": "#minecraft:piglin_loved"
+        },
+        "entity": {
+          "type": "minecraft:piglin"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/interacted_with_entity/piglin/piglin"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:strength"
+        }
+      }
+    },
+    "title": "Mob Heads Powers               ",
+    "description": [
+      "",
+      {
+        "text": "Gives the wearer a status effect based on the mob head equipped\n",
+        "color": "white"
+      },
+      {
+        "text": "\n",
+        "color": "yellow"
+      },
+      {
+        "text": "Datapack version: ",
+        "color": "dark_green"
+      },
+      {
+        "text": "v2.0.1",
+        "color": "green"
+      },
+      {
+        "text": "\n",
+        "color": "green"
+      },
+      {
+        "text": "Game version: ",
+        "color": "dark_green"
+      },
+      {
+        "text": "1.21.6+",
+        "color": "green"
+      },
+      {
+        "text": "\n",
+        "color": "green"
+      },
+      {
+        "text": "\n",
+        "color": "green"
+      },
+      {
+        "text": "modrinth.com/datapack/mob-heads-powers",
+        "color": "dark_purple"
+      }
+    ],
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jodek:mob_heads",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

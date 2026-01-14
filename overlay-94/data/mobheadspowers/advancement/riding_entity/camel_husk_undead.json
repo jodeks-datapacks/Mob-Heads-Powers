@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "#mobheadspowers:undead_mounts"
+          },
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.camel_husk.ambient"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/riding_entity/camel_husk_undead"
+  }
+}

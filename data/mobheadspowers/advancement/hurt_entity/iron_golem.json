@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.iron_golem.hurt"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/hurt_entity/iron_golem"
+  }
+}

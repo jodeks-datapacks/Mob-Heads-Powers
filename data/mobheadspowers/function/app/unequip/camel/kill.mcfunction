@@ -1,0 +1,1 @@
+execute as @e[type=interaction,tag=mobheadspowers.entity] at @s if score @s mobheadspowers.entity.id = @a[tag=mobheadspowers.has_interaction,limit=1,tag=mobheadspowers.has_unequipped_interaction] mobheadspowers.entity.id run kill @s

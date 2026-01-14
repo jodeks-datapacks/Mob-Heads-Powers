@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "#mobheadspowers:mounts"
+          },
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.horse.ambient"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/riding_entity/horse"
+  }
+}

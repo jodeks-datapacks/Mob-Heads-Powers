@@ -1,0 +1,45 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "location": {
+                    "fluid": {
+                      "fluids": "#minecraft:water"
+                    }
+                  },
+                  "slots": {
+                    "armor.head": {
+                      "items": "minecraft:player_head",
+                      "components": {
+                        "minecraft:note_block_sound": "minecraft:entity.zombie_nautilus.ambient"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": {
+                  "min": 12000,
+                  "max": 23999
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/equip_only/zombie_nautilus_night"
+  }
+}

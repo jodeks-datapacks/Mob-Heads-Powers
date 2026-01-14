@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_gold_ore"
+    },
+    "title": "Nether",
+    "description": "Powers of heads from nether mobs",
+    "frame": "goal",
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mobheadspowers:description/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

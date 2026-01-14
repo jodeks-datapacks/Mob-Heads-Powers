@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "location": {
+            "fluid": {
+              "fluids": "#minecraft:water"
+            }
+          },
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.elder_guardian.ambient"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/equip_only/elder_guardian"
+  }
+}

@@ -1,0 +1,1 @@
+$execute as @e[type=interaction,tag=mobheadspowers.entity] if score @s mobheadspowers.entity.id = @a[tag=mobheadspowers.has_interaction,limit=1,nbt={UUID:$(UUID)}] mobheadspowers.entity.id run tp @s ~ ~2 ~

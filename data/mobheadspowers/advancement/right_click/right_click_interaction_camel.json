@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"mobheadspowers.has_interaction\"]}"
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"mobheadspowers.entity\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/equip/camel/right_click_mount"
+  }
+}

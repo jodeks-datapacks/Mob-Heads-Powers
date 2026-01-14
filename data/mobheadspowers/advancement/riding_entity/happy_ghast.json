@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "minecraft:happy_ghast"
+          },
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.happy_ghast.ambient"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/riding_entity/happy_ghast"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "location": {
+                      "fluid": {
+                        "fluids": "#minecraft:water"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "stepping_on": {
+                    "block": {
+                      "blocks": [
+                        "minecraft:dirt_path"
+                      ]
+                    }
+                  },
+                  "slots": {
+                    "armor.head": {
+                      "items": "minecraft:player_head",
+                      "components": {
+                        "minecraft:note_block_sound": "minecraft:entity.sniffer.happy"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/equip_only/sniffer"
+  }
+}

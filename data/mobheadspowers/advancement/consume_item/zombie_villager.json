@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.zombie_villager.ambient"
+              }
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:apple",
+            "minecraft:baked_potato",
+            "minecraft:beetroot",
+            "minecraft:beetroot_soup",
+            "minecraft:bread",
+            "minecraft:carrot",
+            "minecraft:chorus_fruit",
+            "minecraft:cookie",
+            "minecraft:dried_kelp",
+            "minecraft:glow_berries",
+            "minecraft:honey_bottle",
+            "minecraft:melon_slice",
+            "minecraft:mushroom_stew",
+            "minecraft:poisonous_potato",
+            "minecraft:potato",
+            "minecraft:pumpkin_pie",
+            "minecraft:suspicious_stew",
+            "minecraft:sweet_berries"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/consume_item/zombie_villager"
+  }
+}

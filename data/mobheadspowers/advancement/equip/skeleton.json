@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:skeleton_skull"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/equip/skeleton"
+  }
+}

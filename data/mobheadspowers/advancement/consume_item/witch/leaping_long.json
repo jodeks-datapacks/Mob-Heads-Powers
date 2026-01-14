@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.witch.ambient"
+              }
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:potion"
+          ],
+          "components": {
+            "minecraft:potion_contents": {
+              "potion": "minecraft:long_leaping"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/consume_item/witch/leaping_long"
+  }
+}

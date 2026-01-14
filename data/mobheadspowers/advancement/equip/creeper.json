@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:creeper_head"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/equip/creeper"
+  }
+}

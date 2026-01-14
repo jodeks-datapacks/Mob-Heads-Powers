@@ -1,0 +1,2 @@
+execute as @e[type=zombified_piglin,tag=mobheadspowers.entity] at @s if score @s mobheadspowers.entity.id = @a[tag=mobheadspowers.has_zp,limit=1,sort=nearest,tag=mobheadspowers.has_unequipped_zp] mobheadspowers.entity.id run tp @s ~ ~1000 ~
+execute as @e[type=zombified_piglin,tag=mobheadspowers.entity] at @s if score @s mobheadspowers.entity.id = @a[tag=mobheadspowers.has_zp,limit=1,sort=nearest,tag=mobheadspowers.has_unequipped_zp] mobheadspowers.entity.id run kill @s

@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "unequiped_head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "slots": {
+                  "armor.head": {
+                    "items": "minecraft:player_head",
+                    "components": {
+                      "minecraft:note_block_sound": "minecraft:entity.zombified_piglin.ambient"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/unequip/zombified_piglin/unequip"
+  }
+}

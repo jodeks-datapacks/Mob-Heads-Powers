@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "properties": [
+            {
+              "name": "textures",
+              "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDRkMDAxNTg5Yjg2YzIyY2YyNGYxNjE4ZmU3ZWZlZjEyOTMyYWE5MTQ4YjVlNGZjNmZmNGE2MTRiOTkwYWUxMiJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+    "title": "Salmon Head",
+    "description": "Water breathing but suffocates out of water",
+    "frame": "task",
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mobheadspowers:description/aquatic/pufferfish",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

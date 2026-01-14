@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:player_head",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.panda.ambient"
+              }
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "glow_berries"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/consume_item/panda/glow_berries"
+  }
+}

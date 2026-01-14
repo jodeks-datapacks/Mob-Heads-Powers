@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:zombie_head"
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:rotten_flesh",
+            "minecraft:beef",
+            "minecraft:chicken",
+            "minecraft:mutton",
+            "minecraft:porkchop",
+            "minecraft:rabbit"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/consume_item/zombie"
+  }
+}

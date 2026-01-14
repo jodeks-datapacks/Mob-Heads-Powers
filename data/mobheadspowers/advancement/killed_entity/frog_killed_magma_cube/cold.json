@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:player_head",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.frog.death"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:magma_cube"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/killed_entity/frog_killed_magma_cube/cold"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "armor.head": {
+              "items": "minecraft:wither_skeleton_skull"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/hurt_entity/wither_skeleton"
+  }
+}

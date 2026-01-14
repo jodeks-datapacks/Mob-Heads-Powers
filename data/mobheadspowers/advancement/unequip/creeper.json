@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "unequiped_head": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "slots": {
+                  "armor.head": {
+                    "items": "minecraft:creeper_head"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/unequip/creeper"
+  }
+}

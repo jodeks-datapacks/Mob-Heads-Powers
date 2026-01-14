@@ -1,0 +1,47 @@
+{
+  "criteria": {
+    "unequiped_head": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "armor.head": {
+                        "items": "minecraft:player_head",
+                        "components": {
+                          "minecraft:note_block_sound": "minecraft:entity.vindicator.ambient"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "weapon.mainhand": {
+                        "items": "#minecraft:axes"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mobheadspowers:app/unequip/vindicator"
+  }
+}
