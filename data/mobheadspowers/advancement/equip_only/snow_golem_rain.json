@@ -21,6 +21,18 @@
           {
             "condition": "minecraft:weather_check",
             "raining": true
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&snow_golem"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
         ]
       }

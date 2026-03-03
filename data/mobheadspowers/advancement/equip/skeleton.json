@@ -3,13 +3,31 @@
     "equiped_head": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {
-          "slots": {
-            "armor.head": {
-              "items": "minecraft:skeleton_skull"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:skeleton_skull"
+                }
+              }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&skeleton"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        }
+        ]
       }
     }
   },

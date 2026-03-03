@@ -3,16 +3,34 @@
     "equiped_head": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": {
-          "slots": {
-            "armor.head": {
-              "items": "minecraft:player_head",
-              "components": {
-                "minecraft:note_block_sound": "minecraft:entity.parrot.ambient"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:player_head",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.parrot.ambient"
+                  }
+                }
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&parrot"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        }
+        ]
       }
     }
   },

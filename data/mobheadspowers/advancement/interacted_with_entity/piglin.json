@@ -3,13 +3,31 @@
     "equiped_head": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": {
-          "equipment": {
-            "head": {
-              "items": "minecraft:piglin_head"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:piglin_head"
+                }
+              }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&piglin"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        },
+        ],
         "item": {
           "items": "#minecraft:piglin_loved"
         },

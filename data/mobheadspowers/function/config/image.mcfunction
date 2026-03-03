@@ -13,13 +13,13 @@ function mobheadspowers:image/set_image_data {\
   ],\
   background_color: "#303030",\
   description: [\
-    "Mob Heads Powers",\
-    {text: "Gives the wearer a status effect based on the mob head equipped", color: "#aaaaaa"},\
+    {translate: "mobheadspowers.title", fallback: "Mob Heads Powers"},\
+    {translate: "mobheadspowers.description", fallback: "Gives the wearer a status effect based on the mob head equipped", color: "#aaaaaa"},\
     "",\
-    [{text: "Datapack version: ", color: "#00a800"}, {text: "v2.0.1", color: "#54fc54"}],\
-    [{text: "Game version: ", color: "#00a800"}, {text: "1.21.6+", color: "#54fc54"}],\
+    [{translate: "jodek.datapack_version", fallback: "Datapack version: ", color: "#00a800"}, {text: "v2.0.1", color: "#54fc54"}],\
+    [{translate: "jodek.game_version", fallback: "Game version: ", color: "#00a800"}, {text: "1.21.6+", color: "#54fc54"}],\
     "",\
-    [{text: "By ", color: "#fcfcfc"}, {text: "Jodek", color: "#fcfc54"}],\
+    [{translate: "jodek.by", fallback: "By ", color: "#fcfcfc"}, {text: "Jodek", color: "#fcfc54"}],\
     {text: "modrinth.com/datapack/mob-heads-powers", color: "#a800a8"},\
     "",\
     "",\

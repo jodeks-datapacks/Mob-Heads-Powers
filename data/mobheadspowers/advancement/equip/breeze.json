@@ -33,6 +33,18 @@
                 }
               }
             ]
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&breeze"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
         ]
       }

@@ -59,6 +59,18 @@
                 ]
               }
             ]
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&copper_golem"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
         ],
         "damage": {

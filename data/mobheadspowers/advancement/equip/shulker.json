@@ -3,19 +3,37 @@
     "equiped_head": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": {
-          "flags": {
-            "is_sneaking": true
-          },
-          "slots": {
-            "armor.head": {
-              "items": "minecraft:player_head",
-              "components": {
-                "minecraft:note_block_sound": "minecraft:entity.shulker.ambient"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:player_head",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.shulker.ambient"
+                  }
+                }
+              },
+              "flags": {
+                "is_sneaking": true
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&shulker"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        }
+        ]
       }
     }
   },

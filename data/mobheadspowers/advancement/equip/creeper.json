@@ -3,13 +3,31 @@
     "equiped_head": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {
-          "slots": {
-            "armor.head": {
-              "items": "minecraft:creeper_head"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:creeper_head"
+                }
+              }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&creeper"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        }
+        ]
       }
     }
   },

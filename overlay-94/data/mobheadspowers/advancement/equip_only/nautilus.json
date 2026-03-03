@@ -47,6 +47,18 @@
                 }
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&nautilus"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
         ]
       }

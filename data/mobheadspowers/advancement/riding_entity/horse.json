@@ -3,19 +3,37 @@
     "equiped_head": {
       "trigger": "minecraft:started_riding",
       "conditions": {
-        "player": {
-          "vehicle": {
-            "type": "#mobheadspowers:mounts"
-          },
-          "slots": {
-            "armor.head": {
-              "items": "minecraft:player_head",
-              "components": {
-                "minecraft:note_block_sound": "minecraft:entity.horse.ambient"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:player_head",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.horse.ambient"
+                  }
+                }
+              },
+              "vehicle": {
+                "type": "minecraft:horse"
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&horse"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        }
+        ]
       }
     }
   },

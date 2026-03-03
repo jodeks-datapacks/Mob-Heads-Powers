@@ -3,13 +3,31 @@
     "equiped_head": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": {
-          "slots": {
-            "armor.head": {
-              "items": "minecraft:wither_skeleton_skull"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:wither_skeleton_skull"
+                }
+              }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&wither_skeleton"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        }
+        ]
       }
     }
   },

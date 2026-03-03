@@ -3,21 +3,39 @@
     "equiped_head": {
       "trigger": "minecraft:tick",
       "conditions": {
-        "player": {
-          "location": {
-            "fluid": {
-              "fluids": "#minecraft:water"
-            }
-          },
-          "slots": {
-            "armor.head": {
-              "items": "minecraft:player_head",
-              "components": {
-                "minecraft:note_block_sound": "minecraft:entity.elder_guardian.ambient"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:player_head",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.elder_guardian.ambient"
+                  }
+                }
+              },
+              "location": {
+                "fluid": {
+                  "fluids": "#minecraft:water"
+                }
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&elder_guardian"
+              },
+              "score": "mobheadspowers.config"
+            },
+            "range": 1
           }
-        }
+        ]
       }
     }
   },

@@ -12,7 +12,10 @@
               "predicate": {
                 "slots": {
                   "armor.head": {
-                    "items": "minecraft:piglin_head"
+                    "items": "minecraft:player_head",
+                    "components": {
+                      "minecraft:note_block_sound": "minecraft:entity.piglin_brute.ambient"
+                    }
                   }
                 }
               }

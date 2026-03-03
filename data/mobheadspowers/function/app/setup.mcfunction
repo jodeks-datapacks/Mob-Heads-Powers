@@ -7,6 +7,9 @@ scoreboard objectives add mobheadspowers.image dummy
 # Print the image
 function mobheadspowers:config/image
 
+function mobheadspowers:config/set_default
+scoreboard objectives add mobheadspowers.config trigger
+
 scoreboard objectives add mobheadspowers.damage_timer dummy
 
 scoreboard objectives add mobheadspowers.random_sound dummy
