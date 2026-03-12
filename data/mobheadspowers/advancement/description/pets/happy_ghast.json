@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Happy Ghast Head",
-    "description": "Faster Happy Ghast",
+    "title": {
+      "translate": "entity.minecraft.happy_Ghast",
+      "fallback": "Happy Ghast",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.happy_Ghast",
+      "fallback": "Faster Happy Ghast"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

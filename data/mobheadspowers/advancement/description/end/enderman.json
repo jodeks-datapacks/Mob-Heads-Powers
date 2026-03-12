@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Enderman Head",
-    "description": "Longer block reach (6)",
+    "title": {
+      "translate": "entity.minecraft.enderman",
+      "fallback": "Enderman",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.enderman",
+      "fallback": "Longer block reach (6)"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

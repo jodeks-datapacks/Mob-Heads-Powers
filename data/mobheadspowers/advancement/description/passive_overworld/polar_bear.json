@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Polar Bear Head",
-    "description": "Fish gives more hunger",
+    "title": {
+      "translate": "entity.minecraft.Polar_Bear",
+      "fallback": "Polar Bear",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.polar_Bear",
+      "fallback": "Fish gives more hunger"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

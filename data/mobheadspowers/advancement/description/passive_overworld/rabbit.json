@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Brown Rabbit Head",
-    "description": "Luck, even more with rabbit foot in offhand",
+    "title": {
+      "translate": "entity.minecraft.brown_Rabbit",
+      "fallback": "Brown Rabbit",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.brown_Rabbit",
+      "fallback": "Luck, even more with rabbit foot in offhand"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

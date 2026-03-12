@@ -3,8 +3,14 @@
     "icon": {
       "id": "minecraft:ender_eye"
     },
-    "title": "End",
-    "description": "Powers of heads from end mobs",
+    "title": {
+      "translate": "biome.minecraft.the_end",
+      "fallback": "The End"
+    },
+    "description": {
+      "translate": "mobheadspowers.description.end",
+      "fallback": "Powers of heads from end mobs"
+    },
     "frame": "goal",
     "announce_to_chat": false,
     "show_toast": false

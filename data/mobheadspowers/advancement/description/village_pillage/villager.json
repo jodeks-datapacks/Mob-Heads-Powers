@@ -13,8 +13,23 @@
 				}
 			}
 		},
-		"title": "Villager",
-		"description": "Clears weather but blinds for 30s",
+		"title": {
+			"translate": "entity.minecraft.villager",
+			"fallback": "Villager",
+			"extra": [
+				{
+					"text": " "
+				},
+				{
+					"translate": "mobheads.head",
+					"fallback": "Head"
+				}
+			]
+		},
+		"description": {
+			"translate": "mobheadspowers.description.villager",
+			"fallback": "Clears weather but blinds for 30s"
+		},
 		"frame": "task",
 		"show_toast": false,
 		"announce_to_chat": false,

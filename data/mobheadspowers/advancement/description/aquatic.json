@@ -3,8 +3,14 @@
     "icon": {
       "id": "minecraft:tropical_fish"
     },
-    "title": "Aquatic",
-    "description": "Powers of heads from aquatic mobs",
+    "title": {
+      "translate": "mobheadspowers.aquatic",
+      "fallback": "Aquatic"
+    },
+    "description": {
+      "translate": "mobheadspowers.description.aquatic",
+      "fallback": "Powers of heads from aquatic mobs"
+    },
     "frame": "goal",
     "announce_to_chat": false,
     "show_toast": false

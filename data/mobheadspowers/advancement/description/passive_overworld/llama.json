@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Llama Head",
-    "description": "Step up 3 blocks",
+    "title": {
+      "translate": "entity.minecraft.llama",
+      "fallback": "Llama",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.llama",
+      "fallback": "Step up 3 blocks"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

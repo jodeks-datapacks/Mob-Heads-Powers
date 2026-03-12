@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Drowned Head",
-    "description": "More damage in water and rain",
+    "title": {
+      "translate": "entity.minecraft.drowned",
+      "fallback": "Drowned",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.drowned",
+      "fallback": "More damage in water and rain"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

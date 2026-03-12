@@ -3,8 +3,14 @@
     "icon": {
       "id": "minecraft:nether_gold_ore"
     },
-    "title": "Nether",
-    "description": "Powers of heads from nether mobs",
+    "title": {
+      "translate": "advancements.nether.root.title",
+      "fallback": "Nether"
+    },
+    "description": {
+      "translate": "mobheadspowers.description.nether",
+      "fallback": "Powers of heads from nether mobs"
+    },
     "frame": "goal",
     "announce_to_chat": false,
     "show_toast": false

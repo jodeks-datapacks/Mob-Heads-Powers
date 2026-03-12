@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Zombified Piglin Head",
-    "description": "Piglins are afraid of Player",
+    "title": {
+      "translate": "entity.minecraft.zombified_Piglin",
+      "fallback": "Zombified Piglin",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.zombified_Piglin",
+      "fallback": "Piglins are afraid of Players"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

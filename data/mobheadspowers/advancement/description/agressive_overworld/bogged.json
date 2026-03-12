@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Bogged Skull",
-    "description": "Shoot poison arrows but -4HP",
+    "title": {
+      "translate": "entity.minecraft.bogged",
+      "fallback": "Bogged",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.skull",
+          "fallback": "Skull"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.bogged",
+      "fallback": "Shoot poison arrows but -4HP"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

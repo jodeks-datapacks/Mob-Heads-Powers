@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Strider Head",
-    "description": "Frost walker works for lava",
+    "title": {
+      "translate": "entity.minecraft.strider",
+      "fallback": "Strider",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.strider",
+      "fallback": "Frost walker works for lava"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

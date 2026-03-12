@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Husk Head",
-    "description": "Inflicts hunger on hit",
+    "title": {
+      "translate": "entity.minecraft.husk",
+      "fallback": "Husk",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.husk",
+      "fallback": "Inflicts hunger on hit"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

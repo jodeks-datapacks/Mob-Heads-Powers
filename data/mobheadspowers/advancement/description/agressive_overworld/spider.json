@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Spider Head",
-    "description": "Climb walls/ceilings while sneaking",
+    "title": {
+      "translate": "entity.minecraft.spider",
+      "fallback": "Spider",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.spider",
+      "fallback": "Climb walls/ceilings while sneaking"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

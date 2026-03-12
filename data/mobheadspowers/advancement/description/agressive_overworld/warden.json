@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Warden",
-    "description": "Haste 8",
+    "title": {
+      "translate": "entity.minecraft.warden",
+      "fallback": "Warden",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.warden",
+      "fallback": "Haste 10"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

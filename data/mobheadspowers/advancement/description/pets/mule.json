@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Mule Head",
-    "description": "Faster + step up 1.5 blocks",
+    "title": {
+      "translate": "entity.minecraft.mule",
+      "fallback": "Mule",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.mule",
+      "fallback": "Faster + step up 1.5 blocks"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

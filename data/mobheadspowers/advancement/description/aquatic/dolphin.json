@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Dolphin Head",
-    "description": "Dolphin's grace but hunger + blindness",
+    "title": {
+      "translate": "entity.minecraft.dolphin",
+      "fallback": "Dolphin",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.dolphin",
+      "fallback": "Dolphin's grace but hunger + blindness"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

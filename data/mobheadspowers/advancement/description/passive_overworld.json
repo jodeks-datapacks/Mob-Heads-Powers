@@ -3,8 +3,23 @@
     "icon": {
       "id": "minecraft:grass_block"
     },
-    "title": "Passive Overworld",
-    "description": "Powers of heads from passive overworld mobs",
+    "title": {
+      "translate": "mobheadspowers.passive",
+      "fallback": "Passive",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "flat_world_preset.minecraft.overworld",
+          "fallback": "Overworld"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.passive_overworld",
+      "fallback": "Powers of heads from passive overworld mobs"
+    },
     "frame": "goal",
     "announce_to_chat": false,
     "show_toast": false

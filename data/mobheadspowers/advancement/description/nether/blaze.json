@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Blaze Head",
-    "description": "Fire resistance + slow falling",
+    "title": {
+      "translate": "entity.minecraft.blaze",
+      "fallback": "Blaze",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.blaze",
+      "fallback": "Fire resistance + slow falling"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

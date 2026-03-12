@@ -3,8 +3,23 @@
     "icon": {
       "id": "minecraft:creeper_head"
     },
-    "title": "Creeper Head",
-    "description": "Faster sneaking",
+    "title": {
+      "translate": "entity.minecraft.creeper",
+      "fallback": "Creeper",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.creeper",
+      "fallback": "Faster sneaking"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Snow Golem Head",
-    "description": "Leaves snow trail, takes damage in rain",
+    "title": {
+      "translate": "entity.minecraft.snow_Golem",
+      "fallback": "Snow Golem",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.snow_Golem",
+      "fallback": "Leaves snow trail, takes damage in rain"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

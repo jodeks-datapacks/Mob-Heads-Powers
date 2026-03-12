@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Fox Head",
-    "description": "Less fall damage (6 blocks safe)",
+    "title": {
+      "translate": "entity.minecraft.fox",
+      "fallback": "Fox",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.fox",
+      "fallback": "Less fall damage (6 blocks safe)"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

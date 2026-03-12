@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Squid Head",
-    "description": "Water breathing but suffocates out of water",
+    "title": {
+      "translate": "entity.minecraft.squid",
+      "fallback": "Squid",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.squid",
+      "fallback": "Water breathing but suffocates out of water"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Cod Head",
-    "description": "Water breathing but suffocates out of water",
+    "title": {
+      "translate": "entity.minecraft.cod",
+      "fallback": "Cod",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.cod",
+      "fallback": "Water breathing but suffocates out of water"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

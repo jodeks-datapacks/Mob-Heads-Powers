@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Ravager Head",
-    "description": "Player gets bigger +20HP, turns grass into paths",
+    "title": {
+      "translate": "entity.minecraft.ravager",
+      "fallback": "Ravager",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.ravager",
+      "fallback": "Player gets bigger +20HP, turns grass into paths"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -3,8 +3,23 @@
     "icon": {
       "id": "minecraft:skeleton_skull"
     },
-    "title": "Skeleton Skull",
-    "description": "Longer block reach (8) but -14HP",
+    "title": {
+      "translate": "entity.minecraft.skeleton",
+      "fallback": "Skeleton",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.Skull",
+          "fallback": "Skull"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.skeleton",
+      "fallback": "Longer block reach (8) but -14HP"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

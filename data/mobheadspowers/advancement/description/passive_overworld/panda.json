@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Panda Head",
-    "description": "50% chance to not use vegan food",
+    "title": {
+      "translate": "entity.minecraft.Panda",
+      "fallback": "Panda",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.panda",
+      "fallback": "50% chance to not use vegan food"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

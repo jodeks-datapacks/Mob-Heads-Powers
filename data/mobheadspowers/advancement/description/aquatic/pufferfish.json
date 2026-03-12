@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Pufferfish Head",
-    "description": "Gives poison for 30min + curse of binding",
+    "title": {
+      "translate": "entity.minecraft.Pufferfish",
+      "fallback": "Pufferfish",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.pufferfish",
+      "fallback": "Gives poison for 30min + curse of binding"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

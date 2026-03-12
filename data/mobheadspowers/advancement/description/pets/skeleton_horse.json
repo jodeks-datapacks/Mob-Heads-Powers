@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Skeleton Horse Skull",
-    "description": "Constantly Regenerate Pets",
+    "title": {
+      "translate": "entity.minecraft.skeleton_Horse",
+      "fallback": "Skeleton Horse",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.skull",
+          "fallback": "Skull"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.skeleton_Horse",
+      "fallback": "Constantly regenerate Pets"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

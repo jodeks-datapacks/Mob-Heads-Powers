@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Nautilus Head",
-    "description": "Break blocks faster underwater",
+    "title": {
+      "translate": "entity.minecraft.nautilus",
+      "fallback": "Nautilus",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.Nautilus",
+      "fallback": "Break blocks faster underwater"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

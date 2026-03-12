@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Tadpole Head",
-    "description": "Water breathing and player is 1 block tall but suffocates out of water",
+    "title": {
+      "translate": "entity.minecraft.tadpole",
+      "fallback": "Tadpole",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.tadpole",
+      "fallback": "Water breathing and player is 1 block tall but suffocates out of water"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

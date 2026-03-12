@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Sheep Head",
-    "description": "Creates waypoint if head is on armor stand",
+    "title": {
+      "translate": "entity.minecraft.sheep",
+      "fallback": "Sheep",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.sheep",
+      "fallback": "Creates waypoint if head is on armor stand"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Vex Head",
-    "description": "Slow falling",
+    "title": {
+      "translate": "entity.minecraft.vex",
+      "fallback": "Vex",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.vex",
+      "fallback": "Slow falling"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

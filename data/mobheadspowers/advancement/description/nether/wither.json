@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Wither Skull",
-    "description": "Permanent bad omen effect + low gravity",
+    "title": {
+      "translate": "entity.minecraft.wither",
+      "fallback": "Wither",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.Skull",
+          "fallback": "Skull"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.wither",
+      "fallback": "Permanent bad omen effect + low gravity"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

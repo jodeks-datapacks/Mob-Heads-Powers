@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Brown Trader Llama Head",
-    "description": "Hero of the Village effect",
+    "title": {
+      "translate": "entity.minecraft.trader_llama",
+      "fallback": "Trader Llama",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.trader_llama",
+      "fallback": "Hero of the Village effect"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

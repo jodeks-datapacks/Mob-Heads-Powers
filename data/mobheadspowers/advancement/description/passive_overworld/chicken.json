@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Chicken Head",
-    "description": "25% chance to drop egg every 10s",
+    "title": {
+      "translate": "entity.minecraft.chicken",
+      "fallback": "Chicken",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.chicken",
+      "fallback": "25% chance to drop egg every 10s"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

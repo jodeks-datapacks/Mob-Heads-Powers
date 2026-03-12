@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Snow Fox Head",
-    "description": "Less fall damage (10 blocks safe)",
+    "title": {
+      "translate": "entity.minecraft.snow_Fox",
+      "fallback": "Snow Fox",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.snow_Fox",
+      "fallback": "Less fall damage (10 blocks safe)"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

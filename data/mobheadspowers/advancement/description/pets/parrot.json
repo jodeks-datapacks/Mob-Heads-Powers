@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Parrot Head",
-    "description": "Plays random parrot sounds every 10s",
+    "title": {
+      "translate": "entity.minecraft.Parrot",
+      "fallback": "Parrot",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.parrot",
+      "fallback": "Plays random parrot sounds every 10s"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

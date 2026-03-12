@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Stray Skull",
-    "description": "Shoot slowness arrows",
+    "title": {
+      "translate": "entity.minecraft.stray",
+      "fallback": "Stray",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.Skull",
+          "fallback": "Skull"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.stray",
+      "fallback": "Shoot slowness arrows"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

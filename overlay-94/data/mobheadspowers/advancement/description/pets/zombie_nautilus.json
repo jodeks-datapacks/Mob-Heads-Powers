@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Zombie Nautilus Head",
-    "description": "Break blocks even faster at night",
+    "title": {
+      "translate": "entity.minecraft.zombie_Nautilus",
+      "fallback": "Zombie Nautilus",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.zombie_Nautilus",
+      "fallback": "Break blocks even faster at night"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

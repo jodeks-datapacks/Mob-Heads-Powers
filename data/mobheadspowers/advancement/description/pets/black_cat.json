@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Black Cat Head",
-    "description": "Night vision + no fall damage",
+    "title": {
+      "translate": "entity.minecraft.black_Cat",
+      "fallback": "Black Cat",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.black_Cat",
+      "fallback": "Night vision + no fall damage"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

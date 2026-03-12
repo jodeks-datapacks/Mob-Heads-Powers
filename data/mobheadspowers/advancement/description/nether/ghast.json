@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Ghast Head",
-    "description": "Shoot explosive arrows",
+    "title": {
+      "translate": "entity.minecraft.ghast",
+      "fallback": "Ghast",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.ghast",
+      "fallback": "Shoot explosive arrows"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Sniffer Head",
-    "description": "+20HP, slower + bigger, turns paths into dirt",
+    "title": {
+      "translate": "entity.minecraft.sniffer",
+      "fallback": "Sniffer",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.sniffer",
+      "fallback": "+20HP, slower + bigger, turns paths into dirt"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Axolotl Head",
-    "description": "Longer water breathing",
+    "title": {
+      "translate": "entity.minecraft.axolotl",
+      "fallback": "Axolotl",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.axolotl",
+      "fallback": "Longer water breathing"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

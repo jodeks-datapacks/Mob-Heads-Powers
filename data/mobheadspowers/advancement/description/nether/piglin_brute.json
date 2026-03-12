@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Piglin Brute Head",
-    "description": "Mined ores go straight into inventory",
+    "title": {
+      "translate": "entity.minecraft.Piglin_Brute",
+      "fallback": "Piglin Brute",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.piglin_Brute",
+      "fallback": "Mined ores go straight into inventory"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

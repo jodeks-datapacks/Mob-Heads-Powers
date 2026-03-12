@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Zoglin Head",
-    "description": "Magnet for nearby blocks",
+    "title": {
+      "translate": "entity.minecraft.zoglin",
+      "fallback": "Zoglin",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.zoglin",
+      "fallback": "Magnet for nearby blocks"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

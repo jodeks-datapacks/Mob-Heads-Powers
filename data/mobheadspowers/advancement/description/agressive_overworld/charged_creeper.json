@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Charged Creeper Head",
-    "description": "Getting hit makes you explode",
+    "title": {
+      "translate": "entity.minecraft.charged_Creeper",
+      "fallback": "Charged Creeper",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.charged_Creeper",
+      "fallback": "Getting hit makes you explode"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

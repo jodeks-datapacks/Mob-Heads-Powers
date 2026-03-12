@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Mooshroom Head",
-    "description": "Leaves mushroom trail",
+    "title": {
+      "translate": "entity.minecraft.mooshroom",
+      "fallback": "Mooshroom",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.mooshroom",
+      "fallback": "Leaves mushroom trail"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Wolf Head",
-    "description": "Strength 8 during full moon",
+    "title": {
+      "translate": "entity.minecraft.wolf",
+      "fallback": "Wolf",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.wolf",
+      "fallback": "Strength 8 during full moon"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

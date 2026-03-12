@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Iron Golem Head",
-    "description": "Levitation hits",
+    "title": {
+      "translate": "entity.minecraft.iron_Golem",
+      "fallback": "Iron Golem",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.iron_Golem",
+      "fallback": "Levitation hits"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

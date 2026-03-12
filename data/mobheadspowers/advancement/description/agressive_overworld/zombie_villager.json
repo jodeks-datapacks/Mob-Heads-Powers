@@ -13,8 +13,23 @@
 				}
 			}
 		},
-		"title": "Zombie Villager",
-		"description": "Non-meat food restores more hunger",
+		"title": {
+			"translate": "entity.minecraft.zombie",
+			"fallback": "Zombie",
+			"extra": [
+				{
+					"text": " "
+				},
+				{
+					"translate": "mobheads.Villager",
+					"fallback": "Villager"
+				}
+			]
+		},
+		"description": {
+			"translate": "mobheadspowers.description.zombie",
+			"fallback": "Non-meat food restores more hunger"
+		},
 		"frame": "task",
 		"show_toast": false,
 		"announce_to_chat": false,

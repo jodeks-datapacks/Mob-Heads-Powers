@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Bee Head",
-    "description": "Poison hits but blinds player",
+    "title": {
+      "translate": "entity.minecraft.bee",
+      "fallback": "Bee",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.bee",
+      "fallback": "Poison hits but blinds player"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

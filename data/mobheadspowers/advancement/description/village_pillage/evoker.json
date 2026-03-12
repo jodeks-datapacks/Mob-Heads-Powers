@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Evoker Head",
-    "description": "Wearing head summons thunder but player is hit by lightning",
+    "title": {
+      "translate": "entity.minecraft.evoker",
+      "fallback": "Evoker",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.evoker",
+      "fallback": "Wearing head summons thunder but player is hit by lightning"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

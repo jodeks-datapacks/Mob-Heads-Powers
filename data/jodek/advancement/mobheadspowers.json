@@ -8,31 +8,50 @@
         }
       }
     },
-    "title": "Mob Heads Powers               ",
+    "title": {
+      "translate": "mobheadspowers.title",
+      "fallback": "Mob Heads Powers",
+      "extra": [
+        {
+          "text": "                         "
+        }
+      ]
+    },
     "description": [
       "",
       {
-        "text": "Gives the wearer a status effect based on the mob head equipped\n",
+        "translate": "mobheadspowers.description",
+        "fallback": "Gives the wearer a status effect based on the mob head equipped",
         "color": "white"
       },
       {
-        "text": "\n",
+        "text": "\n"
+      },
+      {
+        "text": "/trigger mobheadspowers.config",
         "color": "yellow"
       },
       {
-        "text": "Datapack version: ",
+        "text": "\n"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "translate": "jodek.datapack_version",
+        "fallback": "Datapack version: ",
         "color": "dark_green"
       },
       {
-        "text": "v2.1.1",
+        "text": "v2.1.2",
         "color": "green"
       },
       {
-        "text": "\n",
-        "color": "green"
+        "text": "\n"
       },
       {
-        "text": "Game version: ",
+        "translate": "jodek.game_version",
+        "fallback": "Game version: ",
         "color": "dark_green"
       },
       {
@@ -40,12 +59,10 @@
         "color": "green"
       },
       {
-        "text": "\n",
-        "color": "green"
+        "text": "\n"
       },
       {
-        "text": "\n",
-        "color": "green"
+        "text": "\n"
       },
       {
         "text": "modrinth.com/datapack/mob-heads-powers",

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Elder Guardian",
-    "description": "Drains nearby water + thorns",
+    "title": {
+      "translate": "entity.minecraft.elder",
+      "fallback": "Elder",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.Guardian",
+          "fallback": "Guardian"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.elder",
+      "fallback": "Drains nearby water + thorns"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

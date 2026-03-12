@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Horse Head",
-    "description": "Faster horse, random speed",
+    "title": {
+      "translate": "entity.minecraft.horse",
+      "fallback": "Horse",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.horse",
+      "fallback": "Faster horse, random speed"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

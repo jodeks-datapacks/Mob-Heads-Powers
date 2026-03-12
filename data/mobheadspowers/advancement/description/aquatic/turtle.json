@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Turtle Head",
-    "description": "Resistance 4 but slowness",
+    "title": {
+      "translate": "entity.minecraft.turtle",
+      "fallback": "Turtle",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.turtle",
+      "fallback": "Resistance 4 but slowness"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

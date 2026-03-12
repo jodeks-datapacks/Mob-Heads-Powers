@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Guardian Head",
-    "description": "Thorns",
+    "title": {
+      "translate": "entity.minecraft.guardian",
+      "fallback": "Guardian",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.guardian",
+      "fallback": "Thorns"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

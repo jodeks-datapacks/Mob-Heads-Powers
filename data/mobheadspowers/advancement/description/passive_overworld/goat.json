@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Goat Head",
-    "description": "Strong knockback hits",
+    "title": {
+      "translate": "entity.minecraft.goat",
+      "fallback": "Goat",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.goat",
+      "fallback": "Strong knockback hits"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

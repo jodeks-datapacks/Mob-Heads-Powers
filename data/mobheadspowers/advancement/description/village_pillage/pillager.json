@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Pillager Head",
-    "description": "Stronger crossbow shots",
+    "title": {
+      "translate": "entity.minecraft.Pillager",
+      "fallback": "Pillager",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.pillager",
+      "fallback": "Stronger crossbow shots"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

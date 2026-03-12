@@ -3,8 +3,14 @@
     "icon": {
       "id": "minecraft:lead"
     },
-    "title": "Pets",
-    "description": "Powers of heads from pet mobs",
+    "title": {
+      "translate": "mobheadspowers.pets",
+      "fallback": "Pets"
+    },
+    "description": {
+      "translate": "mobheadspowers.description.pets",
+      "fallback": "Powers of heads from pet mobs"
+    },
     "frame": "goal",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Temperate Pig Head",
-    "description": "Speed boost on mud",
+    "title": {
+      "translate": "entity.minecraft.temperate_Pig",
+      "fallback": "Temperate Pig",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.temperate_Pig",
+      "fallback": "Speed boost on mud"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

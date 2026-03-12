@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Glow Squid Head",
-    "description": "Water breathing + night vision + glowing but suffocates out of water",
+    "title": {
+      "translate": "entity.minecraft.glow_Squid",
+      "fallback": "Glow Squid",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.glow_Squid",
+      "fallback": "Water breathing + night vision + glowing but suffocates out of water"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

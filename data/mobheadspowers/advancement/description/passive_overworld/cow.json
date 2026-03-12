@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Cow Head",
-    "description": "Milk particle trail",
+    "title": {
+      "translate": "entity.minecraft.cow",
+      "fallback": "Cow",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.cow",
+      "fallback": "Milk particle trail"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

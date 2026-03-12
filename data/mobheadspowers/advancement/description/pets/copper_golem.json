@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Copper Golem Head",
-    "description": "1-3. Stage: Channeling arrows when thunder + 4. Stage: Channeling arrows when any weather",
+    "title": {
+      "translate": "entity.minecraft.copper_Golem",
+      "fallback": "Copper Golem",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.copper_Golem",
+      "fallback": "1-3. Stage: Channeling arrows when thunder + 4. Stage: Channeling arrows when any weather"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

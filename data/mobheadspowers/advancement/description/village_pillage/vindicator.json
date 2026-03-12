@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Vindicator Head",
-    "description": "Faster axe attacks",
+    "title": {
+      "translate": "entity.minecraft.vindicator",
+      "fallback": "Vindicator",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.vindicator",
+      "fallback": "Faster axe attacks"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

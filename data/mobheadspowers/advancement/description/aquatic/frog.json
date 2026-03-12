@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Temperate Frog Head",
-    "description": "Magma Cubes drop Froglights",
+    "title": {
+      "translate": "entity.minecraft.temperate_Frog",
+      "fallback": "Temperate Frog",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.temperate_Frog",
+      "fallback": "Magma Cubes drop Froglights"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

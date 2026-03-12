@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Bat Head",
-    "description": "Night vision + vampirism, but shorter reach + taller",
+    "title": {
+      "translate": "entity.minecraft.bat",
+      "fallback": "Bat",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.bat",
+      "fallback": "Night vision + vampirism, but shorter reach + taller"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

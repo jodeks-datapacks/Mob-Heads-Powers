@@ -380,7 +380,7 @@ type:"minecraft:multi_action",\
       type:"minecraft:boolean",\
       key:"dialog_copper_golem_oxidized",\
       label: {\
-        "translate": "entity.mobheadspowers.oxidized",\
+        "translate": "mobheadspowers.entity.oxidized",\
         "extra": [\
           {\
             "text": " "\
@@ -456,7 +456,7 @@ type:"minecraft:multi_action",\
       type:"minecraft:boolean",\
       key:"dialog_charged_creeper",\
       label: {\
-        "translate": "entity.mobheadspowers.charged_creeper",\
+        "translate": "mobheadspowers.entity.charged_creeper",\
         "fallback": "Charged Creeper",\
         "extra": [\
           {\
@@ -674,7 +674,7 @@ type:"minecraft:multi_action",\
       type:"minecraft:boolean",\
       key:"dialog_fish",\
       label: {\
-        "translate": "entity.mobheadspowers.fish",\
+        "translate": "mobheadspowers.entity.fish",\
         "fallback": "Fish",\
         "extra": [\
           {\

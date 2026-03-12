@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Witch Head",
-    "description": "1/3 chance to keep potion",
+    "title": {
+      "translate": "entity.minecraft.witch",
+      "fallback": "Witch",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.witch",
+      "fallback": "1/3 chance to keep potion"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

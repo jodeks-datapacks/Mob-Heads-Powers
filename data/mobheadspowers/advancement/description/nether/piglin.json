@@ -3,8 +3,23 @@
     "icon": {
       "id": "minecraft:piglin_head"
     },
-    "title": "Piglin Head",
-    "description": "New bartering trades",
+    "title": {
+      "translate": "entity.minecraft.Piglin",
+      "fallback": "Piglin",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.piglin",
+      "fallback": "New bartering trades"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

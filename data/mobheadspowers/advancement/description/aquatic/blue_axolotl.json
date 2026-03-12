@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Blue Axolotl Head",
-    "description": "Longer water breathing + regeneration",
+    "title": {
+      "translate": "entity.minecraft.blue_Axolotl",
+      "fallback": "Blue Axolotl",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.blue_Axolotl",
+      "fallback": "Longer water breathing + regeneration"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

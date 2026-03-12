@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Armadillo Head",
-    "description": "Crouch for high resistance but can't move",
+    "title": {
+      "translate": "entity.minecraft.armadillo",
+      "fallback": "Armadillo",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.armadillo",
+      "fallback": "Crouch for high resistance but can't move"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

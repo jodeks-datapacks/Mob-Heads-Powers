@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Ocelot Head",
-    "description": "Speed + 1 block tall",
+    "title": {
+      "translate": "entity.minecraft.Ocelot",
+      "fallback": "Ocelot",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.ocelot",
+      "fallback": "Speed + 1 block tall"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

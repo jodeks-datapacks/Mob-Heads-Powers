@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Invulnerable Wither Skull",
-    "description": "Shoot wither head arrows",
+    "title": {
+      "translate": "entity.minecraft.invulnerable_Wither",
+      "fallback": "Invulnerable Wither",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.Skull",
+          "fallback": "Skull"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.invulnerable_Wither",
+      "fallback": "Shoot wither head arrows"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

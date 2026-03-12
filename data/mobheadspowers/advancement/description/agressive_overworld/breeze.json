@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Breeze Head",
-    "description": "Jump boost when holding mace",
+    "title": {
+      "translate": "entity.minecraft.breeze",
+      "fallback": "Breeze",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.breeze",
+      "fallback": "Jump boost when holding mace"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

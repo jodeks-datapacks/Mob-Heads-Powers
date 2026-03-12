@@ -3,8 +3,23 @@
     "icon": {
       "id": "minecraft:iron_sword"
     },
-    "title": "Agressive Overworld",
-    "description": "Powers of heads from agressive overworld mobs",
+    "title": {
+      "translate": "mobheadspowers.aggressive",
+      "fallback": "Agressive",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "flat_world_preset.minecraft.overworld",
+          "fallback": "Overworld"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.aggressive_overworld",
+      "fallback": "Powers of heads from agressive overworld mobs"
+    },
     "frame": "goal",
     "announce_to_chat": false,
     "show_toast": false

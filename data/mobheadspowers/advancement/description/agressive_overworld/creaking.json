@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Creaking Head",
-    "description": "Regeneration at night",
+    "title": {
+      "translate": "entity.minecraft.creaking",
+      "fallback": "Creaking",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.creaking",
+      "fallback": "Regeneration at night"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

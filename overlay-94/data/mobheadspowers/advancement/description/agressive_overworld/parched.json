@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Parched Head",
-    "description": "Shoot weakness arrows",
+    "title": {
+      "translate": "entity.minecraft.Parched",
+      "fallback": "Parched",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.parched",
+      "fallback": "Shoot weakness arrows"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

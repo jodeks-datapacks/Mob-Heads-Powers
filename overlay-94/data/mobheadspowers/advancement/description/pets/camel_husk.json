@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Camel Husk Head",
-    "description": "Regenerate mount while riding",
+    "title": {
+      "translate": "entity.minecraft.camel_Husk",
+      "fallback": "Camel Husk",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.camel_Husk",
+      "fallback": "Regenerate mount while riding"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

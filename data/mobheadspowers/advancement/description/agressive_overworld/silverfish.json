@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Silverfish Head",
-    "description": "1 block tall but sloweness",
+    "title": {
+      "translate": "entity.minecraft.silverfish",
+      "fallback": "Silverfish",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.silverfish",
+      "fallback": "1 block tall but sloweness"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

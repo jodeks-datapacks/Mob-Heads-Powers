@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Tropical Fish Head",
-    "description": "Water breathing but suffocates out of water",
+    "title": {
+      "translate": "entity.minecraft.tropical_Fish",
+      "fallback": "Tropical Fish",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.tropical_Fish",
+      "fallback": "Water breathing but suffocates out of water"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

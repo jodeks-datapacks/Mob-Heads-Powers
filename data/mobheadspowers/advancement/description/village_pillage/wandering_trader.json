@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Wandering Trader Head",
-    "description": "Invisible at night",
+    "title": {
+      "translate": "entity.minecraft.wandering_Trader",
+      "fallback": "Wandering Trader",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.wandering_Trader",
+      "fallback": "Invisible at night"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Phantom Head",
-    "description": "Slow falling but sloweness",
+    "title": {
+      "translate": "entity.minecraft.Phantom",
+      "fallback": "Phantom",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.phantom",
+      "fallback": "Slow falling but sloweness"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Hoglin Head",
-    "description": "Faster pig mounts",
+    "title": {
+      "translate": "entity.minecraft.hoglin",
+      "fallback": "Hoglin",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.hoglin",
+      "fallback": "Faster pig mounts"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

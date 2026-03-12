@@ -3,8 +3,14 @@
     "icon": {
       "id": "minecraft:end_crystal"
     },
-    "title": "Mob Heads Powers",
-    "description": "Descriptions of powers granted by mob heads",
+    "title": {
+      "translate": "mobheadspowers.title",
+      "fallback": "Mob Heads Powers"
+    },
+    "description": {
+      "translate": "mobheadspowers.description.description",
+      "fallback": "Descriptions of powers granted by mob heads"
+    },
     "frame": "challenge",
     "announce_to_chat": false,
     "show_toast": false,

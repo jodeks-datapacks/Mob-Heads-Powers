@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Slime Head",
-    "description": "Jump boost",
+    "title": {
+      "translate": "entity.minecraft.slime",
+      "fallback": "Slime",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.slime",
+      "fallback": "Jump boost"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

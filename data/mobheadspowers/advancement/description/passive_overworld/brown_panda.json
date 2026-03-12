@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Brown Panda Head",
-    "description": "+8 to armor",
+    "title": {
+      "translate": "entity.minecraft.brown_Panda",
+      "fallback": "Brown Panda",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.brown_Panda",
+      "fallback": "+8 to armor"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

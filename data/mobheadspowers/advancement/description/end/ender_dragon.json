@@ -3,8 +3,23 @@
     "icon": {
       "id": "minecraft:dragon_head"
     },
-    "title": "Ender Dragon",
-    "description": "Shoot dragon's balls arrows",
+    "title": {
+      "translate": "entity.minecraft.ender",
+      "fallback": "Ender",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.Dragon",
+          "fallback": "Dragon"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.ender",
+      "fallback": "Shoot dragon's balls arrows"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

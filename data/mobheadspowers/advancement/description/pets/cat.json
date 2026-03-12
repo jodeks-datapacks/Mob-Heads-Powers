@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Cat Head",
-    "description": "Scare creepers",
+    "title": {
+      "translate": "entity.minecraft.cat",
+      "fallback": "Cat",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.cat",
+      "fallback": "Scare creepers"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Allay Head",
-    "description": "Slow falling but -4 HP",
+    "title": {
+      "translate": "entity.minecraft.allay",
+      "fallback": "Allay",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.allay",
+      "fallback": "Slow falling but -4 HP"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false

@@ -13,8 +13,23 @@
         }
       }
     },
-    "title": "Donkey Head",
-    "description": "Step up 1.5 blocks",
+    "title": {
+      "translate": "entity.minecraft.donkey",
+      "fallback": "Donkey",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mobheads.head",
+          "fallback": "Head"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mobheadspowers.description.donkey",
+      "fallback": "Step up 1.5 blocks"
+    },
     "frame": "task",
     "announce_to_chat": false,
     "show_toast": false
