@@ -16,7 +16,7 @@ function mob_heads_powers:image/set_image_data {\
     {translate: "mob_heads_powers.title", fallback: "Mob Heads Powers"},\
     {translate: "mob_heads_powers.description", fallback: "Gives the wearer a status effect based on the mob head equipped", color: "#aaaaaa"},\
     "",\
-    [{translate: "jodek.datapack_version", fallback: "Datapack version: ", color: "#00a800"}, {text: "v2.1.2", color: "#54fc54"}],\
+    [{translate: "jodek.datapack_version", fallback: "Datapack version: ", color: "#00a800"}, {text: "v2.1.3", color: "#54fc54"}],\
     [{translate: "jodek.game_version", fallback: "Game version: ", color: "#00a800"}, {text: "1.21.6+", color: "#54fc54"}],\
     "",\
     [{translate: "jodek.by", fallback: "By ", color: "#fcfcfc"}, {text: "Jodek", color: "#fcfc54"}],\
