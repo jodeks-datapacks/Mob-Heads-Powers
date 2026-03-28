@@ -1,0 +1,2 @@
+execute as @e[type=cat,tag=mob_heads_powers.entity] at @s if score @s mob_heads_powers.entity.id = @a[tag=mob_heads_powers.has_cat,limit=1,sort=nearest,tag=mob_heads_powers.has_unequipped_cat] mob_heads_powers.entity.id run tp @s ~ ~1000 ~
+execute as @e[type=cat,tag=mob_heads_powers.entity] at @s if score @s mob_heads_powers.entity.id = @a[tag=mob_heads_powers.has_cat,limit=1,sort=nearest,tag=mob_heads_powers.has_unequipped_cat] mob_heads_powers.entity.id run kill @s

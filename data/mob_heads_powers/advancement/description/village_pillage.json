@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "mob_heads_powers.village_pillage",
+      "fallback": "Village & Pillage"
+    },
+    "description": {
+      "translate": "mob_heads_powers.description.village_pillage",
+      "fallback": "Powers of heads from village and pillage mobs"
+    },
+    "frame": "goal",
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mob_heads_powers:description/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "translate": "entity.minecraft.skeleton",
+      "fallback": "Skeleton",
+      "extra": [
+        {
+          "text": " "
+        },
+        {
+          "translate": "mob_heads.Skull",
+          "fallback": "Skull"
+        }
+      ]
+    },
+    "description": {
+      "translate": "mob_heads_powers.description.skeleton",
+      "fallback": "Longer block reach (8) but -14HP"
+    },
+    "frame": "task",
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mob_heads_powers:description/agressive_overworld/silverfish",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

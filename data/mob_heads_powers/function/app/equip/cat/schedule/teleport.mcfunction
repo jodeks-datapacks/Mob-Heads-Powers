@@ -1,0 +1,1 @@
+$execute as @e[type=cat,tag=mob_heads_powers.entity] if score @s mob_heads_powers.entity.id = @a[tag=mob_heads_powers.has_cat,limit=1,nbt={UUID:$(UUID)}] mob_heads_powers.entity.id run tp @s ~ ~2 ~

@@ -1,0 +1,61 @@
+#> mob_heads_powers:uninstall
+# Function to uninstall the datapack
+
+data remove storage mob_heads_powers:image data
+data remove storage mob_heads_powers:root data
+
+scoreboard objectives remove mob_heads_powers.image
+
+scoreboard objectives remove mob_heads_powers.damage_timer
+
+scoreboard objectives remove mob_heads_powers.random_sound
+scoreboard objectives remove mob_heads_powers.random_sound_timer
+
+scoreboard objectives remove mob_heads_powers.random
+scoreboard objectives remove mob_heads_powers.random_timer
+
+scoreboard objectives remove mob_heads_powers.damage_dealt
+scoreboard objectives remove mob_heads_powers.heal_time
+scoreboard objectives remove mob_heads_powers.constants
+
+scoreboard objectives remove mob_heads_powers.random_consume
+
+scoreboard objectives remove mob_heads_powers.entity.id
+
+scoreboard objectives remove mob_heads_powers.location.x
+scoreboard objectives remove mob_heads_powers.location.y
+scoreboard objectives remove mob_heads_powers.location.z
+
+scoreboard objectives remove mob_heads_powers.shot_arrow
+scoreboard objectives remove mob_heads_powers.shot_arrow_crossbow
+
+scoreboard objectives remove mob_heads_powers.horse.speed
+
+scoreboard objectives remove mob_heads_powers.mined_coal_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_coal_ore
+
+scoreboard objectives remove mob_heads_powers.mined_iron_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_iron_ore
+
+scoreboard objectives remove mob_heads_powers.mined_copper_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_copper_ore
+scoreboard objectives remove mob_heads_powers.mined_gold_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_gold_ore
+
+scoreboard objectives remove mob_heads_powers.mined_redstone_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_redstone_ore
+scoreboard objectives remove mob_heads_powers.mined_emerald_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_emerald_ore
+
+scoreboard objectives remove mob_heads_powers.mined_lapis_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_lapis_ore
+scoreboard objectives remove mob_heads_powers.mined_diamond_ore
+scoreboard objectives remove mob_heads_powers.mined_deepslate_diamond_ore
+
+scoreboard objectives remove mob_heads_powers.mined_nether_quartz_ore
+scoreboard objectives remove mob_heads_powers.mined_nether_gold_ore
+scoreboard objectives remove mob_heads_powers.mined_ancient_debris
+
+scoreboard objectives remove mob_heads_powers.riding_cast_temp
+
+say Successfully uninstalled Mob Heads Powers!

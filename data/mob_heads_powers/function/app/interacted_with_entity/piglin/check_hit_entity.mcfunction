@@ -1,0 +1,1 @@
+execute if score &hit mob_heads_powers.riding_cast_temp matches 0 positioned ~-0.9 ~-0.9 ~-0.9 if entity @s[dx=0] positioned ~0.95 ~0.95 ~0.95 run function mob_heads_powers:app/interacted_with_entity/piglin/hit_entity

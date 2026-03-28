@@ -1,0 +1,46 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "vehicle": {
+                  "type": "#mob_heads_powers:undead_mounts"
+                },
+                "slots": {
+                  "armor.head": {
+                    "items": "minecraft:player_head",
+                    "components": {
+                      "minecraft:note_block_sound": "minecraft:entity.camel_husk.ambient"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&camel_husk"
+              },
+              "score": "mob_heads_powers.config"
+            },
+            "range": 1
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mob_heads_powers:app/riding_entity/reset_vehicle/camel_husk_undead"
+  }
+}

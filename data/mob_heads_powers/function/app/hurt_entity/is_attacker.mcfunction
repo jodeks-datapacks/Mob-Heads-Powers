@@ -1,0 +1,1 @@
+execute on attacker if entity @s[tag=mob_heads_powers.attacker] run return 1

@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:tropical_fish"
+    },
+    "title": {
+      "translate": "mob_heads_powers.aquatic",
+      "fallback": "Aquatic"
+    },
+    "description": {
+      "translate": "mob_heads_powers.description.aquatic",
+      "fallback": "Powers of heads from aquatic mobs"
+    },
+    "frame": "goal",
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "mob_heads_powers:description/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

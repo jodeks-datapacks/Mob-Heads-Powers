@@ -1,0 +1,55 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "slots": {
+                "armor.head": {
+                  "items": "minecraft:player_head",
+                  "components": {
+                    "minecraft:note_block_sound": "minecraft:entity.copper_golem_oxidized.step"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&copper_golem_oxidized"
+              },
+              "score": "mob_heads_powers.config"
+            },
+            "range": 1
+          }
+        ],
+        "damage": {
+          "type": {
+            "source_entity": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:bow",
+                    "minecraft:crossbow",
+                    "minecraft:trident"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mob_heads_powers:app/hurt_entity/copper_golem_oxidized"
+  }
+}

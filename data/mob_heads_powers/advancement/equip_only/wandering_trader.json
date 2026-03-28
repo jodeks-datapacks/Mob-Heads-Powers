@@ -1,0 +1,52 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "slots": {
+                    "armor.head": {
+                      "items": "minecraft:player_head",
+                      "components": {
+                        "minecraft:note_block_sound": "minecraft:entity.wandering_trader.ambient"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": {
+                  "min": 12000,
+                  "max": 23999
+                }
+              }
+            ]
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&wandering_trader"
+              },
+              "score": "mob_heads_powers.config"
+            },
+            "range": 1
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mob_heads_powers:app/equip_only/wandering_trader"
+  }
+}

@@ -10,7 +10,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{Tags:[\"mobheadspowers.piglin_trade\"]}"
+              "nbt": "{Tags:[\"mob_heads_powers.piglin_trade\"]}"
             }
           }
         }
@@ -279,7 +279,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "nbt": "{Tags:[\"mobheadspowers.piglin_trade\"]}"
+            "nbt": "{Tags:[\"mob_heads_powers.piglin_trade\"]}"
           }
         }
       ],

@@ -1,0 +1,44 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:player_head",
+			"components": {
+				"minecraft:profile": {
+					"properties": [
+						{
+							"name": "textures",
+							"value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTg0MmE1M2YyMzUxOGNhNjViOTRjYWI1MDg5MDIxYmE2NGU1MzkzYWQ4ZGUwZmE2MDViNmZkZDk3ZTFjZTc2YyJ9fX0="
+						}
+					]
+				}
+			}
+		},
+		"title": {
+			"translate": "entity.minecraft.zombie",
+			"fallback": "Zombie",
+			"extra": [
+				{
+					"text": " "
+				},
+				{
+					"translate": "mob_heads.Villager",
+					"fallback": "Villager"
+				}
+			]
+		},
+		"description": {
+			"translate": "mob_heads_powers.description.zombie",
+			"fallback": "Non-meat food restores more hunger"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "mob_heads_powers:description/agressive_overworld/warden",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

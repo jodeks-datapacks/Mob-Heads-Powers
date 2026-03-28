@@ -1,0 +1,3 @@
+execute if score &hit mob_heads_powers.riding_cast_temp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[type=piglin,tag=!mob_heads_powers.piglin_trade,dx=0,sort=nearest] run function mob_heads_powers:app/interacted_with_entity/piglin/check_hit_entity
+scoreboard players add &distance mob_heads_powers.riding_cast_temp 1
+execute if score &hit mob_heads_powers.riding_cast_temp matches 0 if score &distance mob_heads_powers.riding_cast_temp matches ..50 positioned ^ ^ ^0.1 run function mob_heads_powers:app/interacted_with_entity/piglin/ray
