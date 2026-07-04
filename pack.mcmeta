@@ -23,7 +23,7 @@
         "text": " "
       },
       {
-        "text": "2.1.3",
+        "text": "2.1.4",
         "color": "#55ff55"
       },
       "\n",
@@ -50,6 +50,11 @@
       {
         "directory": "overlay-95",
         "min_format": 95,
+        "max_format": 999
+      },
+      {
+        "directory": "overlay-107.1",
+        "min_format": 107,
         "max_format": 999
       }
     ]

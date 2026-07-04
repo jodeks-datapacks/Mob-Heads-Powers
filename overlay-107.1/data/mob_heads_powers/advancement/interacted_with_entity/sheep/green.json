@@ -1,0 +1,42 @@
+{
+  "criteria": {
+    "equiped_head": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:player_head",
+          "components": {
+            "minecraft:profile": {
+              "properties": [
+                {
+                  "name": "textures",
+                  "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1M2E4ZWMzMmJlOWM1NTBkMWM1NjBhY2I5NDFlZGQ5ZTNiNzNkZGJmMTU4NjkyM2ZiMzdiMjIwYjQ1NTNkZCJ9fX0="
+                }
+              ]
+            }
+          }
+        },
+        "entity": {
+          "entity_type": "minecraft:armor_stand"
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&sheep"
+              },
+              "score": "mob_heads_powers.config"
+            },
+            "range": 1
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mob_heads_powers:app/interacted_with_entity/sheep/green"
+  }
+}
