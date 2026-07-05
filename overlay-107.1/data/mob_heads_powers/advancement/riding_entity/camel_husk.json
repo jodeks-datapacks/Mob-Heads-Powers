@@ -5,7 +5,7 @@
       "conditions": {
         "player": {
           "vehicle": {
-            "type": "#mob_heads_powers:mounts"
+            "entity_type": "#mob_heads_powers:mounts"
           },
           "slots": {
             "armor.head": {

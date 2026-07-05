@@ -11,7 +11,7 @@
               "entity": "this",
               "predicate": {
                 "vehicle": {
-                  "type": "#mob_heads_powers:undead_mounts"
+                  "entity_type": "#mob_heads_powers:undead_mounts"
                 },
                 "slots": {
                   "armor.head": {
