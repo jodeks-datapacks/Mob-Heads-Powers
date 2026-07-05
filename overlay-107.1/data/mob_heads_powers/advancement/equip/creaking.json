@@ -11,16 +11,11 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                  "location": {
-                    "fluid": {
-                      "fluids": "#minecraft:water"
-                    }
-                  },
                   "slots": {
                     "armor.head": {
                       "items": "minecraft:player_head",
                       "components": {
-                        "minecraft:note_block_sound": "minecraft:entity.zombie_nautilus.ambient"
+                        "minecraft:note_block_sound": "minecraft:entity.creaking.ambient"
                       }
                     }
                   }
@@ -28,30 +23,19 @@
               },
               {
                 "condition": "minecraft:time_check",
+                "clock": "overworld",
                 "value": {
-                  "min": 0,
-                  "max": 11999
+                  "min": 12000,
+                  "max": 23999
                 }
               }
             ]
-          },
-          {
-            "condition": "minecraft:value_check",
-            "value": {
-              "type": "minecraft:score",
-              "target": {
-                "type": "minecraft:fixed",
-                "name": "&zombie_nautilus"
-              },
-              "score": "mob_heads_powers.config"
-            },
-            "range": 1
           }
         ]
       }
     }
   },
   "rewards": {
-    "function": "mob_heads_powers:app/equip_only/zombie_nautilus_day"
+    "function": "mob_heads_powers:app/equip/creaking"
   }
 }

@@ -11,24 +11,36 @@
               "entity": "this",
               "predicate": {
                 "vehicle": {
-                  "entity_type": "minecraft:happy_ghast"
+                  "entity_type": "#mob_heads_powers:mounts"
                 },
                 "slots": {
                   "armor.head": {
                     "items": "minecraft:player_head",
                     "components": {
-                      "minecraft:note_block_sound": "minecraft:entity.happy_ghast.ambient"
+                      "minecraft:note_block_sound": "minecraft:entity.camel_husk.ambient"
                     }
                   }
                 }
               }
             }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&camel_husk"
+              },
+              "score": "mob_heads_powers.config"
+            },
+            "range": 1
           }
         ]
       }
     }
   },
   "rewards": {
-    "function": "mob_heads_powers:app/riding_entity/happy_ghast"
+    "function": "mob_heads_powers:app/riding_entity/reset_vehicle/camel_husk"
   }
 }

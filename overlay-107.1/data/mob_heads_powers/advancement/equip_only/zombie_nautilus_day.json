@@ -11,11 +11,16 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
+                  "location": {
+                    "fluid": {
+                      "fluids": "#minecraft:water"
+                    }
+                  },
                   "slots": {
                     "armor.head": {
                       "items": "minecraft:player_head",
                       "components": {
-                        "minecraft:note_block_sound": "minecraft:entity.wolf.ambient"
+                        "minecraft:note_block_sound": "minecraft:entity.zombie_nautilus.ambient"
                       }
                     }
                   }
@@ -23,11 +28,11 @@
               },
               {
                 "condition": "minecraft:time_check",
+                "clock": "overworld",
                 "value": {
-                  "min": 12000,
-                  "max": 23999
-                },
-                "period": 192000
+                  "min": 0,
+                  "max": 11999
+                }
               }
             ]
           },
@@ -37,7 +42,7 @@
               "type": "minecraft:score",
               "target": {
                 "type": "minecraft:fixed",
-                "name": "&wolf"
+                "name": "&zombie_nautilus"
               },
               "score": "mob_heads_powers.config"
             },
@@ -48,6 +53,6 @@
     }
   },
   "rewards": {
-    "function": "mob_heads_powers:app/equip_only/wolf"
+    "function": "mob_heads_powers:app/equip_only/zombie_nautilus_day"
   }
 }

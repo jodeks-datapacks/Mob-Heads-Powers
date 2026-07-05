@@ -5,7 +5,7 @@
       "conditions": {
         "player": {
           "vehicle": {
-            "entity_type": "#mob_heads_powers:mounts"
+            "entity_type": "#mob_heads_powers:undead_mounts"
           },
           "slots": {
             "armor.head": {
@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "mob_heads_powers:app/riding_entity/camel_husk"
+    "function": "mob_heads_powers:app/riding_entity/camel_husk_undead"
   }
 }

@@ -15,7 +15,7 @@
                     "armor.head": {
                       "items": "minecraft:player_head",
                       "components": {
-                        "minecraft:note_block_sound": "minecraft:entity.wandering_trader.ambient"
+                        "minecraft:note_block_sound": "minecraft:entity.wolf.ambient"
                       }
                     }
                   }
@@ -23,10 +23,12 @@
               },
               {
                 "condition": "minecraft:time_check",
+                "clock": "overworld",
                 "value": {
                   "min": 12000,
                   "max": 23999
-                }
+                },
+                "period": 192000
               }
             ]
           },
@@ -36,7 +38,7 @@
               "type": "minecraft:score",
               "target": {
                 "type": "minecraft:fixed",
-                "name": "&wandering_trader"
+                "name": "&wolf"
               },
               "score": "mob_heads_powers.config"
             },
@@ -47,6 +49,6 @@
     }
   },
   "rewards": {
-    "function": "mob_heads_powers:app/equip_only/wandering_trader"
+    "function": "mob_heads_powers:app/equip_only/wolf"
   }
 }

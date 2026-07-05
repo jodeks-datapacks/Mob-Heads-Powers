@@ -11,16 +11,11 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                  "location": {
-                    "fluid": {
-                      "fluids": "#minecraft:water"
-                    }
-                  },
                   "slots": {
                     "armor.head": {
                       "items": "minecraft:player_head",
                       "components": {
-                        "minecraft:note_block_sound": "minecraft:entity.zombie_nautilus.ambient"
+                        "minecraft:note_block_sound": "minecraft:entity.wandering_trader.ambient"
                       }
                     }
                   }
@@ -28,6 +23,7 @@
               },
               {
                 "condition": "minecraft:time_check",
+                "clock": "overworld",
                 "value": {
                   "min": 12000,
                   "max": 23999
@@ -41,7 +37,7 @@
               "type": "minecraft:score",
               "target": {
                 "type": "minecraft:fixed",
-                "name": "&zombie_nautilus"
+                "name": "&wandering_trader"
               },
               "score": "mob_heads_powers.config"
             },
@@ -52,6 +48,6 @@
     }
   },
   "rewards": {
-    "function": "mob_heads_powers:app/equip_only/zombie_nautilus_night"
+    "function": "mob_heads_powers:app/equip_only/wandering_trader"
   }
 }
