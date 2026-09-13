@@ -237,6 +237,25 @@ type:"minecraft:multi_action",\
     },\
     {\
       type:"minecraft:boolean",\
+      key:"dialog_camel_husk",\
+      label: {\
+        "translate": "entity.minecraft.camel_husk",\
+        "extra": [\
+          {\
+            "text": " "\
+          },\
+          {\
+            "translate": "mob_heads_powers.config.label",\
+            "fallback": "Head Power"\
+          }\
+        ]\
+      },\
+      initial:$(camel_husk),\
+      on_true:"1",\
+      on_false:"0"\
+    },\
+    {\
+      type:"minecraft:boolean",\
       key:"dialog_cat",\
       label: {\
         "translate": "entity.minecraft.cat",\
@@ -984,6 +1003,25 @@ type:"minecraft:multi_action",\
     },\
     {\
       type:"minecraft:boolean",\
+      key:"dialog_nautilus",\
+      label: {\
+        "translate": "entity.minecraft.nautilus",\
+        "extra": [\
+          {\
+            "text": " "\
+          },\
+          {\
+            "translate": "mob_heads_powers.config.label",\
+            "fallback": "Head Power"\
+          }\
+        ]\
+      },\
+      initial:$(nautilus),\
+      on_true:"1",\
+      on_false:"0"\
+    },\
+    {\
+      type:"minecraft:boolean",\
       key:"dialog_ocelot",\
       label: {\
         "translate": "entity.minecraft.ocelot",\
@@ -1044,6 +1082,25 @@ type:"minecraft:multi_action",\
         ]\
       },\
       initial:$(brown_panda),\
+      on_true:"1",\
+      on_false:"0"\
+    },\
+    {\
+      type:"minecraft:boolean",\
+      key:"dialog_parched",\
+      label: {\
+        "translate": "entity.minecraft.parched",\
+        "extra": [\
+          {\
+            "text": " "\
+          },\
+          {\
+            "translate": "mob_heads_powers.config.label",\
+            "fallback": "Head Power"\
+          }\
+        ]\
+      },\
+      initial:$(parched),\
       on_true:"1",\
       on_false:"0"\
     },\
@@ -1835,6 +1892,25 @@ type:"minecraft:multi_action",\
     },\
     {\
       type:"minecraft:boolean",\
+      key:"dialog_zombie_nautilus",\
+      label: {\
+        "translate": "entity.minecraft.zombie_nautilus",\
+        "extra": [\
+          {\
+            "text": " "\
+          },\
+          {\
+            "translate": "mob_heads_powers.config.label",\
+            "fallback": "Head Power"\
+          }\
+        ]\
+      },\
+      initial:$(zombie_nautilus),\
+      on_true:"1",\
+      on_false:"0"\
+    },\
+    {\
+      type:"minecraft:boolean",\
       key:"dialog_zombified_piglin",\
       label: {\
         "translate": "entity.minecraft.zombified_piglin",\
@@ -1861,12 +1937,12 @@ type:"minecraft:multi_action",\
     },\
     "action": {\
       type:"dynamic/run_command",\
-      template:"function mob_heads_powers:config/update/dialog_config {dialog_nautilus:$(dialog_nautilus), dialog_zombie_nautilus:$(dialog_zombie_nautilus), dialog_camel_husk:$(dialog_camel_husk), dialog_charged_creeper:$(dialog_charged_creeper), dialog_copper_golem_oxidized:$(dialog_copper_golem_oxidized), dialog_fish:$(dialog_fish), dialog_snow_fox:$(dialog_snow_fox), dialog_brown_panda:$(dialog_brown_panda), dialog_blue_axolotl:$(dialog_blue_axolotl), dialog_aquatic:$(dialog_aquatic), dialog_black_cat:$(dialog_black_cat), dialog_wither_skeleton:$(dialog_wither_skeleton), dialog_parched:$(dialog_parched), dialog_copper_golem:$(dialog_copper_golem), dialog_allay:$(dialog_allay), dialog_armadillo:$(dialog_armadillo), dialog_axolotl:$(dialog_axolotl), dialog_bat:$(dialog_bat), dialog_bee:$(dialog_bee), dialog_blaze:$(dialog_blaze), dialog_bogged:$(dialog_bogged), dialog_breeze:$(dialog_breeze), dialog_camel:$(dialog_camel), dialog_cat:$(dialog_cat), dialog_cave_spider:$(dialog_cave_spider), dialog_chicken:$(dialog_chicken), dialog_cod:$(dialog_cod), dialog_cow:$(dialog_cow), dialog_creaking:$(dialog_creaking), dialog_creeper:$(dialog_creeper), dialog_dolphin:$(dialog_dolphin), dialog_donkey:$(dialog_donkey), dialog_drowned:$(dialog_drowned), dialog_elder_guardian:$(dialog_elder_guardian), dialog_ender_dragon:$(dialog_ender_dragon), dialog_enderman:$(dialog_enderman), dialog_endermite:$(dialog_endermite), dialog_evoker:$(dialog_evoker), dialog_fox:$(dialog_fox), dialog_frog:$(dialog_frog), dialog_ghast:$(dialog_ghast), dialog_glow_squid:$(dialog_glow_squid), dialog_goat:$(dialog_goat), dialog_guardian:$(dialog_guardian), dialog_happy_ghast:$(dialog_happy_ghast), dialog_hoglin:$(dialog_hoglin), dialog_horse:$(dialog_horse), dialog_husk:$(dialog_husk), dialog_illusioner:$(dialog_illusioner), dialog_iron_golem:$(dialog_iron_golem), dialog_llama:$(dialog_llama), dialog_magma_cube:$(dialog_magma_cube), dialog_mooshroom:$(dialog_mooshroom), dialog_mooshroom_brown:$(dialog_mooshroom_brown), dialog_mule:$(dialog_mule), dialog_ocelot:$(dialog_ocelot), dialog_panda:$(dialog_panda), dialog_parrot:$(dialog_parrot), dialog_phantom:$(dialog_phantom), dialog_pig:$(dialog_pig), dialog_piglin_brute:$(dialog_piglin_brute), dialog_piglin:$(dialog_piglin), dialog_pillager:$(dialog_pillager), dialog_polar_bear:$(dialog_polar_bear), dialog_pufferfish:$(dialog_pufferfish), dialog_rabbit:$(dialog_rabbit), dialog_ravager:$(dialog_ravager), dialog_salmon:$(dialog_salmon), dialog_sheep:$(dialog_sheep), dialog_shulker:$(dialog_shulker), dialog_silverfish:$(dialog_silverfish), dialog_skeleton_horse:$(dialog_skeleton_horse), dialog_skeleton:$(dialog_skeleton), dialog_slime:$(dialog_slime), dialog_sniffer:$(dialog_sniffer), dialog_snow_golem:$(dialog_snow_golem), dialog_spider:$(dialog_spider), dialog_squid:$(dialog_squid), dialog_stray:$(dialog_stray), dialog_strider:$(dialog_strider), dialog_tadpole:$(dialog_tadpole), dialog_trader_llama:$(dialog_trader_llama), dialog_tropical_fish:$(dialog_tropical_fish), dialog_turtle:$(dialog_turtle), dialog_vex:$(dialog_vex), dialog_villager:$(dialog_villager), dialog_vindicator:$(dialog_vindicator), dialog_wandering_trader:$(dialog_wandering_trader), dialog_warden:$(dialog_warden), dialog_witch:$(dialog_witch), dialog_wither:$(dialog_wither), dialog_wither_invulnerable:$(dialog_wither_invulnerable), dialog_wolf:$(dialog_wolf), dialog_zoglin:$(dialog_zoglin), dialog_zombie_horse:$(dialog_zombie_horse), dialog_zombie_villager:$(dialog_zombie_villager), dialog_zombie:$(dialog_zombie), dialog_zombified_piglin:$(dialog_zombified_piglin)}"\
+     template:"function mob_heads_powers:config/update/dialog_config {dialog_nautilus:$(dialog_nautilus), dialog_zombie_nautilus:$(dialog_zombie_nautilus), dialog_camel_husk:$(dialog_camel_husk), dialog_charged_creeper:$(dialog_charged_creeper), dialog_copper_golem_oxidized:$(dialog_copper_golem_oxidized), dialog_fish:$(dialog_fish), dialog_snow_fox:$(dialog_snow_fox), dialog_brown_panda:$(dialog_brown_panda), dialog_blue_axolotl:$(dialog_blue_axolotl), dialog_aquatic:$(dialog_aquatic), dialog_black_cat:$(dialog_black_cat), dialog_wither_skeleton:$(dialog_wither_skeleton), dialog_parched:$(dialog_parched), dialog_copper_golem:$(dialog_copper_golem), dialog_allay:$(dialog_allay), dialog_armadillo:$(dialog_armadillo), dialog_axolotl:$(dialog_axolotl), dialog_bat:$(dialog_bat), dialog_bee:$(dialog_bee), dialog_blaze:$(dialog_blaze), dialog_bogged:$(dialog_bogged), dialog_breeze:$(dialog_breeze), dialog_camel:$(dialog_camel), dialog_cat:$(dialog_cat), dialog_cave_spider:$(dialog_cave_spider), dialog_chicken:$(dialog_chicken), dialog_cod:$(dialog_cod), dialog_cow:$(dialog_cow), dialog_creaking:$(dialog_creaking), dialog_creeper:$(dialog_creeper), dialog_dolphin:$(dialog_dolphin), dialog_donkey:$(dialog_donkey), dialog_drowned:$(dialog_drowned), dialog_elder_guardian:$(dialog_elder_guardian), dialog_ender_dragon:$(dialog_ender_dragon), dialog_enderman:$(dialog_enderman), dialog_endermite:$(dialog_endermite), dialog_evoker:$(dialog_evoker), dialog_fox:$(dialog_fox), dialog_frog:$(dialog_frog), dialog_ghast:$(dialog_ghast), dialog_glow_squid:$(dialog_glow_squid), dialog_goat:$(dialog_goat), dialog_guardian:$(dialog_guardian), dialog_happy_ghast:$(dialog_happy_ghast), dialog_hoglin:$(dialog_hoglin), dialog_horse:$(dialog_horse), dialog_husk:$(dialog_husk), dialog_illusioner:$(dialog_illusioner), dialog_iron_golem:$(dialog_iron_golem), dialog_llama:$(dialog_llama), dialog_magma_cube:$(dialog_magma_cube), dialog_mooshroom:$(dialog_mooshroom), dialog_mooshroom_brown:$(dialog_mooshroom_brown), dialog_mule:$(dialog_mule), dialog_ocelot:$(dialog_ocelot), dialog_panda:$(dialog_panda), dialog_parrot:$(dialog_parrot), dialog_phantom:$(dialog_phantom), dialog_pig:$(dialog_pig), dialog_piglin_brute:$(dialog_piglin_brute), dialog_piglin:$(dialog_piglin), dialog_pillager:$(dialog_pillager), dialog_polar_bear:$(dialog_polar_bear), dialog_pufferfish:$(dialog_pufferfish), dialog_rabbit:$(dialog_rabbit), dialog_ravager:$(dialog_ravager), dialog_salmon:$(dialog_salmon), dialog_sheep:$(dialog_sheep), dialog_shulker:$(dialog_shulker), dialog_silverfish:$(dialog_silverfish), dialog_skeleton_horse:$(dialog_skeleton_horse), dialog_skeleton:$(dialog_skeleton), dialog_slime:$(dialog_slime), dialog_sniffer:$(dialog_sniffer), dialog_snow_golem:$(dialog_snow_golem), dialog_spider:$(dialog_spider), dialog_squid:$(dialog_squid), dialog_stray:$(dialog_stray), dialog_strider:$(dialog_strider), dialog_tadpole:$(dialog_tadpole), dialog_trader_llama:$(dialog_trader_llama), dialog_tropical_fish:$(dialog_tropical_fish), dialog_turtle:$(dialog_turtle), dialog_vex:$(dialog_vex), dialog_villager:$(dialog_villager), dialog_vindicator:$(dialog_vindicator), dialog_wandering_trader:$(dialog_wandering_trader), dialog_warden:$(dialog_warden), dialog_witch:$(dialog_witch), dialog_wither:$(dialog_wither), dialog_wither_invulnerable:$(dialog_wither_invulnerable), dialog_wolf:$(dialog_wolf), dialog_zoglin:$(dialog_zoglin), dialog_zombie_horse:$(dialog_zombie_horse), dialog_zombie_villager:$(dialog_zombie_villager), dialog_zombie:$(dialog_zombie), dialog_zombified_piglin:$(dialog_zombified_piglin)}"\
     }\
   },\
   actions:[\
     {\
-      label:{\
+      label: {\
         "translate": "jodek.config.reset",\
         "fallback": "Reset config"\
       },\

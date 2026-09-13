@@ -23,10 +23,12 @@
               },
               {
                 "condition": "minecraft:time_check",
+                "clock": "overworld",
                 "value": {
                   "min": 12000,
                   "max": 23999
-                }
+                },
+                "period": 24000
               }
             ]
           }

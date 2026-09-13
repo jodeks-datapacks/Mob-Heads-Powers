@@ -32,7 +32,7 @@
           "items": "#minecraft:piglin_loved"
         },
         "entity": {
-          "type": "minecraft:piglin"
+          "entity_type": "minecraft:piglin"
         }
       }
     }

@@ -17,7 +17,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:enchant_randomly",
               "options": "minecraft:soul_speed"
@@ -28,7 +28,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:enchant_randomly",
               "options": "minecraft:soul_speed"
@@ -39,7 +39,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:fire_resistance"
@@ -50,7 +50,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:fire_resistance"
@@ -61,7 +61,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:water"
@@ -72,7 +72,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -88,7 +88,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -104,7 +104,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": 1.0,
@@ -116,7 +116,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -132,7 +132,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -153,7 +153,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -174,7 +174,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -190,7 +190,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -206,7 +206,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -222,7 +222,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -238,7 +238,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -254,7 +254,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {

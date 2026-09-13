@@ -278,6 +278,35 @@ data modify storage mob_heads_powers:root data.dialog_zombie_villager set value 
 data modify storage mob_heads_powers:root data.dialog_zombie set value "$(dialog_zombie)"
 data modify storage mob_heads_powers:root data.dialog_zombified_piglin set value "$(dialog_zombified_piglin)"
 
+
+
+# Changes
+  # Copper Golem
+    $scoreboard players set &copper_golem mob_heads_powers.config $(dialog_copper_golem)
+    $data modify storage mob_heads_powers:root data.copper_golem set value $(dialog_copper_golem)
+    data modify storage mob_heads_powers:root data.dialog_copper_golem set value "$(dialog_copper_golem)"
+
+  # Camel Husk
+    $scoreboard players set &camel_husk mob_heads_powers.config $(dialog_camel_husk)
+    $data modify storage mob_heads_powers:root data.camel_husk set value $(dialog_camel_husk)
+    data modify storage mob_heads_powers:root data.dialog_camel_husk set value "$(dialog_camel_husk)"
+
+  # Parched
+    $scoreboard players set &parched mob_heads_powers.config $(dialog_parched)
+    $data modify storage mob_heads_powers:root data.parched set value $(dialog_parched)
+    data modify storage mob_heads_powers:root data.dialog_parched set value "$(dialog_parched)"
+
+  # Nautilus
+    $scoreboard players set &nautilus mob_heads_powers.config $(dialog_nautilus)
+    $data modify storage mob_heads_powers:root data.nautilus set value $(dialog_nautilus)
+    data modify storage mob_heads_powers:root data.dialog_nautilus set value "$(dialog_nautilus)"
+
+  # Zombie Nautilus
+    $scoreboard players set &zombie_nautilus mob_heads_powers.config $(dialog_zombie_nautilus)
+    $data modify storage mob_heads_powers:root data.zombie_nautilus set value $(dialog_zombie_nautilus)
+    data modify storage mob_heads_powers:root data.dialog_zombie_nautilus set value "$(dialog_zombie_nautilus)"
+
+
 $scoreboard players set &copper_golem_oxidized mob_heads_powers.config $(dialog_copper_golem_oxidized)
 $data modify storage mob_heads_powers:root data.copper_golem_oxidized set value $(dialog_copper_golem_oxidized)
 data modify storage mob_heads_powers:root data.dialog_copper_golem_oxidized set value "$(dialog_copper_golem_oxidized)"
@@ -309,10 +338,3 @@ data modify storage mob_heads_powers:root data.dialog_fish set value "$(dialog_f
 $scoreboard players set &charged_creeper mob_heads_powers.config $(dialog_charged_creeper)
 $data modify storage mob_heads_powers:root data.charged_creeper set value $(dialog_charged_creeper)
 data modify storage mob_heads_powers:root data.dialog_charged_creeper set value "$(dialog_charged_creeper)"
-
-# Changes
-  # Copper Golem
-    $scoreboard players set &copper_golem mob_heads_powers.config $(dialog_copper_golem)
-    $data modify storage mob_heads_powers:root data.copper_golem set value $(dialog_copper_golem)
-    data modify storage mob_heads_powers:root data.dialog_copper_golem set value "$(dialog_copper_golem)"
-
