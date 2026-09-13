@@ -8,12 +8,6 @@
       {
         "text": "\"Mob Heads Powers\" (mob_heads_powers)"
       },
-      "\n",
-      {
-        "translate": "mob_heads_powers.description",
-        "fallback": "Gives the wearer a status effect based on the mob head equipped",
-        "color": "#aaaaaa"
-      },
       "\n\n",
       {
         "translate": "jodek.version",
@@ -23,7 +17,7 @@
         "text": " "
       },
       {
-        "text": "2.1.4",
+        "text": "2.2.0",
         "color": "#55ff55"
       },
       "\n",

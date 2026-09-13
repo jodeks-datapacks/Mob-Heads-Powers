@@ -5,11 +5,6 @@ scoreboard objectives add jodek.config dummy
 execute unless score &mob_heads_powers_load_message jodek.config = &mob_heads_powers_load_message jodek.config run scoreboard players set &mob_heads_powers_load_message jodek.config 1
 execute unless score &mob_heads_powers_advancements jodek.config = &mob_heads_powers_advancements jodek.config run scoreboard players set &mob_heads_powers_advancements jodek.config 1
 
-# Initiate all scoreboard objectives
-scoreboard objectives add mob_heads_powers.image dummy
-
-# Print the image
-function mob_heads_powers:config/image
 
 scoreboard objectives add mob_heads_powers.config trigger
 

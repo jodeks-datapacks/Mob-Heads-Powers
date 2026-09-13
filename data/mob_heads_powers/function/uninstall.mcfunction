@@ -1,10 +1,7 @@
 #> mob_heads_powers:uninstall
 # Function to uninstall the datapack
 
-data remove storage mob_heads_powers:image data
 data remove storage mob_heads_powers:root data
-
-scoreboard objectives remove mob_heads_powers.image
 
 scoreboard objectives remove mob_heads_powers.damage_timer
 

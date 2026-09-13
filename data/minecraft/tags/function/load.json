@@ -1,6 +1,5 @@
 {
   "values": [
-    "mob_heads_powers:app/setup",
-    "mob_heads_powers:app/load_message"
+    "mob_heads_powers:app/setup"
   ]
 }
